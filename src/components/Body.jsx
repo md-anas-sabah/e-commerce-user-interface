@@ -1,7 +1,16 @@
+import { topSalesList } from "../Constant";
+import Card from "./Card";
+
 const Body = () => {
   return (
-    <div className="">
-      <h1>BodyComponent</h1>
+    <div className="flex flex-wrap gap-3 ">
+      {topSalesList.map((topSales) => {
+        return (
+          <div>
+            <Card {...topSales.data} />
+          </div>
+        );
+      })}
     </div>
   );
 };
