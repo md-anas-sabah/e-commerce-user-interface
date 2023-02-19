@@ -1,13 +1,16 @@
 import { topSalesList } from "../Constant";
-import Card from "./Card";
+import TopSaleCard from "./TopSaleCard";
+import { useSelector } from "react-redux";
 
 const Body = () => {
+  const isOpenCart = useSelector((store) => store.toggle.toggleCart);
+
   return (
-    <div className="flex flex-wrap gap-3 ">
+    <div className="flex flex-wrap gap-7 p-10 ">
       {topSalesList.map((topSales) => {
         return (
           <div>
-            <Card {...topSales.data} />
+            <TopSaleCard {...topSales.data} />
           </div>
         );
       })}

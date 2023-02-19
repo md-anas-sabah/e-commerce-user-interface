@@ -1,9 +1,12 @@
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
-const Card = ({ name, price, image }) => {
+const TopSaleCard = ({ name, price, image }) => {
   return (
-    <div className="flex flex-col gap-4">
-      <div className=" rounded-lg aspect-auto overflow-hidden">
-        <img src={image} alt="image" className="h-60 w-60 " />
+    <div
+      className="flex flex-col gap-4 bg-[#F9F9F9] h-[30rem] w-72 hover:drop-shadow-lg transform 
+    transition  hover:scale-105"
+    >
+      <div className=" rounded-lg aspect-auto overflow-hidden ">
+        <img src={image} alt="image" className="h-80 w-72 " />
         <div className="flex justify-center">
           <img
             src={image[1]}
@@ -22,10 +25,14 @@ const Card = ({ name, price, image }) => {
           />
         </div>
       </div>
-      <div className="flex gap-3">
+      <div className="flex justify-between px-3">
         <div className="flex flex-col">
-          <h1 className="text-lg font-bold truncate font-roboto">{name}</h1>
-          <h3 className="font-roboto"> {`₹${price}`} </h3>
+          <h1 className="text-md font-bold truncate font-roboto uppercase">
+            {name}
+          </h1>
+          <h3 className="font-michroma font-semibold text-red-900">
+            {`₹${price}`}
+          </h3>
         </div>
         <div className="">
           <ShoppingBagIcon className="h-8 w-8" />
@@ -35,4 +42,4 @@ const Card = ({ name, price, image }) => {
   );
 };
 
-export default Card;
+export default TopSaleCard;
