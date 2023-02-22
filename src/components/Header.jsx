@@ -22,7 +22,13 @@ const Header = () => {
           </h1>
         </Link>
       </div>
-      <div className="flex relative mr-20 gap-60">
+      <div className="flex flex-row relative mr-20 gap-60">
+        <div className="flex flex-col items-center justify-center">
+          <p className="font-roboto font-bold ">
+            <PersonIcon fontSize="large" />
+            SignIn
+          </p>
+        </div>
         <div className="flex right-72 absolute  ">
           <div className="flex ">
             <ShoppingBasketIcon
@@ -34,12 +40,23 @@ const Header = () => {
           </div>
 
           {isOpenCart && (
-            <div className="absolute px-10 top-10 right-4 w-96 bg-[#F9F9F9] h-96 mt-1 flex flex-col">
-              <h1>Hello cart</h1>
+            <div className="absolute px-10 top-10 right-4 w-96 bg-white border border-black h-96 mt-1 flex flex-col">
+              {cartItem.length === 0 ? (
+                <div className="flex flex-col justify-center text-center">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjhcG-tcVCpdyHukFOGZLaInyXFejYzMENQ&usqp=CAU"
+                    alt="empty-logo"
+                    className="object-contain"
+                  />
+                </div>
+              ) : (
+                <div className="">
+                  <h1>Coming Soon🚀</h1>
+                </div>
+              )}
             </div>
           )}
         </div>
-        <PersonIcon fontSize="large" />
       </div>
     </div>
   );
