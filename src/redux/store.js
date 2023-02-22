@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import toggleSlice from "./toggleSlice";
+import toggleCartSlice from "./toggleCartSlice";
 
 const store = configureStore({
   reducer: {
-    toggle: toggleSlice,
+    toggleCart: toggleCartSlice,
   },
 });
 

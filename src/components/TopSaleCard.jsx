@@ -3,7 +3,7 @@ const TopSaleCard = ({ name, price, image }) => {
   return (
     <div
       className="flex flex-col gap-4 bg-[#F9F9F9] h-[30rem] w-72 hover:drop-shadow-lg transform 
-    transition  hover:scale-105"
+    transition hover:scale-105"
     >
       <div className=" rounded-lg aspect-auto overflow-hidden ">
         <img src={image} alt="image" className="h-80 w-72 " />
