@@ -6,7 +6,8 @@ import { toggle } from "../redux/toggleCartSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
-  const isOpenCart = useSelector((store) => store.toggleCart.toggle);
+  const cartItem = useSelector((store) => store.cart.items);
+  const isOpenCart = useSelector((store) => store.toggleCart.isOpenCart);
 
   const handleToggle = () => {
     dispatch(toggle());
@@ -22,13 +23,14 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex mr-20 gap-60">
-        <div className="flex relative flex-col ">
-          <div className="absolute ">
+        <div className="flex flex-col ">
+          <div className="flex ">
             <ShoppingBasketIcon
               className="cursor-pointer"
               fontSize="large"
               onClick={() => handleToggle()}
             />
+            <p className="font-bold font-roboto"> {cartItem.length} </p>
           </div>
           <div className="px-10">{!isOpenCart && <h1>Hello cart</h1>}</div>
         </div>

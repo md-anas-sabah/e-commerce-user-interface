@@ -1,5 +1,13 @@
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "../redux/cartSlice";
 const TopSaleCard = ({ name, price, image }) => {
+  const dispatch = useDispatch();
+
+  const handleCartItems = () => {
+    dispatch(addItem());
+  };
+
   return (
     <div
       className="flex flex-col gap-4 bg-[#F9F9F9] h-[30rem] w-72 hover:drop-shadow-lg transform 
@@ -35,7 +43,10 @@ const TopSaleCard = ({ name, price, image }) => {
           </h3>
         </div>
         <div className="">
-          <ShoppingBagIcon className="h-8 w-8" />
+          <ShoppingBagIcon
+            className="h-8 w-8 cursor-pointer"
+            onClick={() => handleCartItems()}
+          />
         </div>
       </div>
     </div>
