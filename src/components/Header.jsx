@@ -22,17 +22,22 @@ const Header = () => {
           </h1>
         </Link>
       </div>
-      <div className="flex mr-20 gap-60">
-        <div className="flex flex-col ">
+      <div className="flex relative mr-20 gap-60">
+        <div className="flex right-72 absolute  ">
           <div className="flex ">
             <ShoppingBasketIcon
               className="cursor-pointer"
               fontSize="large"
               onClick={() => handleToggle()}
             />
-            <p className="font-bold font-roboto"> {cartItem.length} </p>
+            <p className="font-bold font-roboto ">{cartItem.length} </p>
           </div>
-          <div className="px-10">{!isOpenCart && <h1>Hello cart</h1>}</div>
+
+          {isOpenCart && (
+            <div className="absolute px-10 top-10 right-4 w-96 bg-[#F9F9F9] h-96 mt-1 flex flex-col">
+              <h1>Hello cart</h1>
+            </div>
+          )}
         </div>
         <PersonIcon fontSize="large" />
       </div>
