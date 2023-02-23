@@ -24,10 +24,12 @@ const Header = () => {
       </div>
       <div className="flex flex-row relative mr-20 gap-60">
         <div className="flex flex-col items-center justify-center">
-          <p className="font-roboto font-bold ">
-            <PersonIcon fontSize="large" />
-            SignIn
-          </p>
+          <Link to="/login">
+            <p className="font-roboto font-bold ">
+              <PersonIcon fontSize="large" />
+              SignIn
+            </p>
+          </Link>
         </div>
         <div className="flex right-72 absolute  ">
           <div className="flex ">
