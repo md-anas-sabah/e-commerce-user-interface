@@ -1,18 +1,21 @@
 import ReactDOM from "react-dom";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { UserAuthContextProvider } from "./context/UserAuthContext";
+import { Provider } from "react-redux";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import { Provider } from "react-redux";
 import store from "./redux/store";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 
 const AppLayout = () => {
   return (
-    <Provider store={store}>
-      <Header />
-      <Outlet />
-    </Provider>
+    <UserAuthContextProvider>
+      <Provider store={store}>
+        <Header />
+        <Outlet />
+      </Provider>
+    </UserAuthContextProvider>
   );
 };
 
