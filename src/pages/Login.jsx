@@ -6,7 +6,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const { login } = useUserAuth();
+  const { login, googleSignIn } = useUserAuth();
   const navigate = useNavigate();
   const handleLogin = async (e) => {
     if (e && e.preventDefault) {
@@ -21,6 +21,15 @@ const Login = () => {
     }
   };
 
+  const googleAuthSignIn = async () => {
+    try {
+      await googleSignIn();
+      navigate("/");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className="flex justify-between  h-[54.3rem]">
       <div className="flex flex-col w-3/5 text-center items-center m-14 p-14">
@@ -32,7 +41,10 @@ const Login = () => {
           <button className="h-14 w-14 border bg-blue-300 text-2xl text-white font-bold rounded-full">
             F
           </button>
-          <button className="h-14 w-14 border bg-blue-500 text-2xl text-white font-bold rounded-full">
+          <button
+            onClick={googleAuthSignIn}
+            className="h-14 w-14 border bg-blue-500 text-2xl text-white font-bold rounded-full"
+          >
             G
           </button>
           <button className="h-14 w-14 border bg-blue-700 text-2xl text-white font-bold rounded-full">
