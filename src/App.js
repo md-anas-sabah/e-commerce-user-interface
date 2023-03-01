@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import { Provider } from "react-redux";

@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
+
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const { SignUp } = useUserAuth();
+  const { signUp } = useUserAuth();
 
   const handleSubmit = async (e) => {
-    if (e && e.preventDefault) {
-      e.preventDefault();
-    }
+    e.preventDefault();
     setError("");
     try {
-      await SignUp(email, password);
+      await signUp(email, password);
+      
     } catch (err) {
+      console.log(err.message);
       setError(err.message);
     }
   };
@@ -38,10 +39,15 @@ const SignUp = () => {
       </div>
       <div className="flex flex-col w-3/5 text-center items-center m-14 p-14">
         <h1 className="font-bold font-bebas text-6xl">SignUp to purchase</h1>
+        {error && (
+          <h1 className="rounded-lg h-14 w-96 text-center font-bold font-roboto p-3 bg-red-400 text-white ">
+            {error}
+          </h1>
+        )}
 
         <div className="mt-10 flex flex-col  gap-10 w-1/3">
           <form
-            onSubmit={handleSubmit()}
+            onSubmit={handleSubmit}
             className="flex flex-col gap-10 items-center"
           >
             <input
@@ -55,16 +61,18 @@ const SignUp = () => {
               type="password"
               placeholder="Password"
               className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
+              autoComplete="on"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             <input
               type="password"
               placeholder="Confirm Password"
+              autoComplete="on"
               className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
             />
             <button className="h-12 rounded-full bg-black text-white uppercase tracking-widest w-48 align-middle">
-              Sign-In
+              Sign-Up
             </button>
           </form>
         </div>
