@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
   const { signUp } = useUserAuth();
 
   const handleSubmit = async (e) => {
@@ -13,7 +14,7 @@ const SignUp = () => {
     setError("");
     try {
       await signUp(email, password);
-      
+      navigate("/login");
     } catch (err) {
       console.log(err.message);
       setError(err.message);

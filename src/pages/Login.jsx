@@ -1,6 +1,26 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useUserAuth } from "../context/UserAuthContext";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const { login } = useUserAuth();
+  const navigate = useNavigate();
+  const handleLogin = async (e) => {
+    if (e && e.preventDefault) {
+      e.preventDefault();
+      setError("");
+      try {
+        await login(email, password);
+        navigate("/");
+      } catch (err) {
+        setError(err.message);
+      }
+    }
+  };
+
   return (
     <div className="flex justify-between  h-[54.3rem]">
       <div className="flex flex-col w-3/5 text-center items-center m-14 p-14">
@@ -24,19 +44,29 @@ const Login = () => {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-10 w-1/3">
-          <input
-            type="text"
-            placeholder="Email"
-            className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
-          />
-          <button className="h-12 rounded-full bg-black text-white uppercase tracking-widest w-48 align-middle">
-            Sign-In
-          </button>
+          <form
+            onSubmit={handleLogin}
+            className="flex flex-col gap-8 items-center w-full"
+          >
+            <input
+              type="text"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
+            />
+            {error && <span className="-mt-8 "> {error} </span>}
+            <button className="h-12 rounded-full bg-black text-white uppercase tracking-widest w-48 align-middle">
+              Sign-In
+            </button>
+          </form>
         </div>
       </div>
       <div className="bg-black w-4/12 rounded-tl-[6rem] rounded-bl-[6rem]">
