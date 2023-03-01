@@ -103,4 +103,30 @@ export const topSalesList = [
       ],
     },
   },
+  {
+    data: {
+      id: "9",
+      name: "Oasis Blue",
+      price: "5499",
+      image: [
+        "https://eu.muroexe.com/68275-large_default/oasis-blue.jpg",
+        "https://eu.muroexe.com/68275-cart_default/oasis-blue.jpg",
+        "https://eu.muroexe.com/68269-cart_default/oasis-black.jpg",
+        "https://eu.muroexe.com/68263-cart_default/oasis-grey.jpg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "10",
+      name: "Fossil Green",
+      price: "1499",
+      image: [
+        "https://eu.muroexe.com/68233-cart_default/fossil-green.jpg",
+        "https://eu.muroexe.com/68233-cart_default/fossil-green.jpg",
+        "https://eu.muroexe.com/68227-cart_default/fossil-black.jpg",
+        "https://eu.muroexe.com/68236-large_default/fossil-green.jpg",
+      ],
+    },
+  },
 ];

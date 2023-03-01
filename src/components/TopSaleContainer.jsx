@@ -3,14 +3,19 @@ import TopSaleCard from "./TopSaleCard";
 
 const TopSaleContainer = () => {
   return (
-    <div className="flex flex-wrap gap-10 p-7 ml-10">
-      {topSalesList.map((topSales) => {
-        return (
-          <div>
-            <TopSaleCard {...topSales.data} />
-          </div>
-        );
-      })}
+    <div>
+      <div>
+        <h1 className="font-bebas font-extrabold text-5xl">Our Top Sales</h1>
+      </div>
+      <div className="flex flex-wrap gap-10 p-7 ml-10">
+        {topSalesList.map((topSales) => {
+          return (
+            <div>
+              <TopSaleCard {...topSales.data} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
