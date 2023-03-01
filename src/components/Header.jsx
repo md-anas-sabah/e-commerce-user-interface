@@ -1,16 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PersonIcon from "@mui/icons-material/Person";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import LogoutIcon from "@mui/icons-material/Logout";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../redux/toggleCartSlice";
+import { useUserAuth } from "../context/UserAuthContext";
 
 const Header = () => {
   const dispatch = useDispatch();
   const cartItem = useSelector((store) => store.cart.items);
   const isOpenCart = useSelector((store) => store.toggleCart.isOpenCart);
+  const { user, logout } = useUserAuth();
+  const navigate = useNavigate();
+
+  // console.log(user);
 
   const handleToggle = () => {
     dispatch(toggle());
+  };
+
+  const handleLogOut = async () => {
+    try {
+      await logout();
+      navigate("/login");
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   return (
@@ -24,12 +39,19 @@ const Header = () => {
       </div>
       <div className="flex flex-row relative mr-20 gap-60">
         <div className="flex flex-col items-center justify-center">
-          <Link to="/login">
-            <p className="font-roboto font-bold ">
-              <PersonIcon fontSize="large" />
-              SignIn
-            </p>
-          </Link>
+          {!user ? (
+            <Link to="/login">
+              <p className="font-roboto font-bold ">
+                <PersonIcon fontSize="large" />
+                <span>Sign-In</span>
+              </p>
+            </Link>
+          ) : (
+            <button onClick={handleLogOut}>
+              <LogoutIcon />
+              <span> {user.email} </span>
+            </button>
+          )}
         </div>
         <div className="flex right-72 absolute  ">
           <div className="flex ">
