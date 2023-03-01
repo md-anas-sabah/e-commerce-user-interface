@@ -3,7 +3,7 @@ import TopSaleCard from "./TopSaleCard";
 
 const TopSaleContainer = () => {
   return (
-    <div className="flex flex-wrap gap-7 p-10">
+    <div className="flex flex-wrap gap-10 p-7 ml-10">
       {topSalesList.map((topSales) => {
         return (
           <div>
