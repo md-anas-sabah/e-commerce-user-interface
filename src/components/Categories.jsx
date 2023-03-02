@@ -1,5 +1,7 @@
+import AthleisureCategory from "./AthleisureCategory";
 import CasualCategory from "./CasualCategory";
 import FormalCategory from "./FormalCategory";
+import SportsCategory from "./SportsCategory";
 
 const Categories = () => {
   return (
@@ -13,10 +15,10 @@ const Categories = () => {
         </div>
         <div className="flex flex-col gap-4 ">
           <CasualCategory />
-          <CasualCategory />
+          <SportsCategory />
         </div>
         <div>
-          <FormalCategory />
+          <AthleisureCategory />
         </div>
       </div>
     </div>
