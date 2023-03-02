@@ -31,7 +31,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-between  h-[54.3rem]">
+    <div className="flex justify-between  h-[50rem]">
       <div className="flex flex-col w-3/5 text-center items-center m-14 p-14">
         <h1 className="font-bold font-bebas text-6xl">Login to your account</h1>
         <p className="font-roboto text-gray-400 mt-1 uppercase">
