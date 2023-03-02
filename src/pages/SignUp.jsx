@@ -22,7 +22,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex justify-between  h-[54.3rem]">
+    <div className="flex justify-between  h-[46.5rem]">
       <div className="bg-black w-4/12 rounded-tr-[6rem] rounded-br-[6rem]">
         <div className="flex flex-col text-center items-center m-14 p-14">
           <h1 className="text-white text-3xl uppercase">
