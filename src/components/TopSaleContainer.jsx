@@ -3,7 +3,7 @@ import TopSaleCard from "./TopSaleCard";
 
 const TopSaleContainer = () => {
   return (
-    <div>
+    <div className="">
       <div>
         <h1 className="font-bebas ml-20 font-extrabold text-5xl">
           Our Top Sales
