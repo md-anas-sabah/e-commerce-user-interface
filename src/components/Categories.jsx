@@ -10,7 +10,7 @@ const Categories = () => {
       <div>
         <h1 className="font-bebas ml-20 mt-6 font-extrabold text-5xl">Categories</h1>
       </div>
-      <div className="flex gap-3 justify-center items-center">
+      <div className="flex gap-3 ">
         <div>
           <Link to="/formalsection">
             <FormalCategory />

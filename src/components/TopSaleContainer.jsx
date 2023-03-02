@@ -9,7 +9,7 @@ const TopSaleContainer = () => {
           Our Top Sales
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center gap-10 p-7 ml-10">
+      <div className="flex flex-wrap gap-10 p-7 ml-10">
         {topSalesList.map((topSales, i) => {
           return (
             <div>
