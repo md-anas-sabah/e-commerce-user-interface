@@ -9,7 +9,7 @@ const FormalContainer = () => {
           Formal Collections
         </h1>
       </div>
-      <div className="flex flex-wrap gap-10 p-7 ml-10">
+      <div className="flex flex-wrap gap-12 p-7 ml-10">
         {formals.map((formal) => {
           return (
             <>
