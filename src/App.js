@@ -2,11 +2,17 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import { Provider } from "react-redux";
+import { lazy, Suspense } from "react";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import store from "./redux/store";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+
+const FormalSection = lazy(() => import("./pages/FormalSection"));
+const CasualSection = lazy(() => import("./pages/CasualSection"));
+const SportsSection = lazy(() => import("./pages/SportsSection"));
+const AthleisureSection = lazy(() => import("./pages/AthleisureSection"));
 
 const AppLayout = () => {
   return (
@@ -35,6 +41,38 @@ const appRouter = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/formalsection",
+        element: (
+          <Suspense>
+            <FormalSection />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/casualsection",
+        element: (
+          <Suspense>
+            <CasualSection />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/sportssection",
+        element: (
+          <Suspense>
+            <SportsSection />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/athleisuresection",
+        element: (
+          <Suspense>
+            <AthleisureSection />
+          </Suspense>
+        ),
       },
     ],
   },

@@ -8,10 +8,10 @@ const TopSaleContainer = () => {
         <h1 className="font-bebas font-extrabold text-5xl">Our Top Sales</h1>
       </div>
       <div className="flex flex-wrap gap-10 p-7 ml-10">
-        {topSalesList.map((topSales) => {
+        {topSalesList.map((topSales, i) => {
           return (
             <div>
-              <TopSaleCard {...topSales.data} />
+              <TopSaleCard key={i} {...topSales.data} />
             </div>
           );
         })}
