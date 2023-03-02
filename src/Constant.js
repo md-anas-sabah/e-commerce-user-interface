@@ -129,6 +129,32 @@ export const topSalesList = [
       ],
     },
   },
+  {
+    data: {
+      id: "11",
+      name: "Slip-ons Ikos 33671 40 Black Leather",
+      price: "8560",
+      image: [
+        "https://img.joomcdn.net/059ecbee90682738e3810a59776a4df6dd0b688e_1024_680.jpeg",
+        "https://img.joomcdn.net/d5ff7d814d890ee1e558bd8648e49327f849318a_1024_680.jpeg",
+        "https://img.joomcdn.net/6ec00f17b5cb0ee02bbaa2b963d17afffbec1b82_1024_680.jpeg",
+        "https://img.joomcdn.net/25220b2667466406e674306910c59ba251ebfa94_1024_690.jpeg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "12",
+      name: "Men Ballroom Dance Shoes Latin Waltz Tango Lether Shoes Low Heel Soft Bottom",
+      price: "1200",
+      image: [
+        "https://img.joomcdn.net/5f5ce4e33d127d97bce208988e76db4f24eb26fa_original.jpeg",
+        "https://img.joomcdn.net/5f5ce4e33d127d97bce208988e76db4f24eb26fa_original.jpeg",
+        "https://img.joomcdn.net/33a82dccd6011a95faffaa8e9a6d7e6f2cf342ea_original.jpeg",
+        "https://img.joomcdn.net/6fb3e8823d45e9881bf6448d9c86d40b44e12eb1_original.jpeg",
+      ],
+    },
+  },
 ];
 
 export const formals = [

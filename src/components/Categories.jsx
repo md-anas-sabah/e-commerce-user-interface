@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const Categories = () => {
   return (
-    <div className="flex flex-col flex-wrap gap-10">
+    <div className="flex w-full flex-col flex-wrap gap-10">
       <div>
-        <h1 className="font-bebas mt-6 font-extrabold text-5xl">Categories</h1>
+        <h1 className="font-bebas ml-20 mt-6 font-extrabold text-5xl">Categories</h1>
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 justify-center items-center">
         <div>
           <Link to="/formalsection">
             <FormalCategory />
