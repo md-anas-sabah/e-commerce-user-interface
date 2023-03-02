@@ -49,7 +49,7 @@ const Header = () => {
           ) : (
             <button onClick={handleLogOut}>
               <LogoutIcon />
-              <span> {user.email} </span>
+              <span> {user.displayName} </span>
             </button>
           )}
         </div>

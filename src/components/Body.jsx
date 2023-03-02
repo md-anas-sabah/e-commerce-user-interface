@@ -3,7 +3,7 @@ import TopSaleContainer from "./TopSaleContainer";
 
 const Body = () => {
   return (
-    <div className="m-10  flex flex-row flex-wrap">
+    <div className="m-10 gap-10 flex flex-row flex-wrap">
       <Categories />
       <TopSaleContainer />
     </div>
