@@ -1,4 +1,4 @@
-import { formals } from "../Constant";
+import { formals } from "../database/FormalDB";
 import Card from "./Card";
 
 const FormalContainer = () => {

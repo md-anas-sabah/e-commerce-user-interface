@@ -1,4 +1,4 @@
-import { topSalesList } from "../Constant";
+import { topSalesList } from "../database/TopSaleListDB";
 import TopSaleCard from "./TopSaleCard";
 
 const TopSaleContainer = () => {
