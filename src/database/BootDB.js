@@ -64,4 +64,95 @@ export const boots = [
       ],
     },
   },
+  {
+    data: {
+      id: "6",
+      name: "New Autumn and Winter Men's High-top Leather Boots Non-slip Water Proof Plus Velvet Warm Thick Men's Business Leather Shoes",
+      price: "7108",
+      image: [
+        "https://img.joomcdn.net/0c177355ce216fe0d4999214ebdc79406169463e_original.jpeg",
+        "https://img.joomcdn.net/3bf4bf6fb19876906b4bdeab4813141ad9de7a73_original.jpeg",
+        "https://img.joomcdn.net/8a8dd550ad689827537fddb1be00047ed4102b99_original.jpeg",
+        "https://img.joomcdn.net/cc39058183e28d286273069b07f6b1a80060f3b7_original.jpeg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "7",
+      name: "New Autumn and Winter Plus Velvet Thick Warm High-top Shoes Men's Non-slip Leather Martin Boots",
+      price: "8988",
+      image: [
+        "https://img.joomcdn.net/e61939fafd863cc330ae1d57b471e8489af63059_original.jpeg",
+        "https://img.joomcdn.net/e61939fafd863cc330ae1d57b471e8489af63059_original.jpeg",
+        "https://img.joomcdn.net/d260fb494ee64f324cbb1b5ad965f72198c59fc6_original.jpeg",
+        "https://img.joomcdn.net/3088b608c77e27933da484108454c03d7da1d2be_original.jpeg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "8",
+      name: "Men's and Women's Plus Velvet Warm Cotton Sneakers Men's Winter Warm High-top Boots",
+      price: "5885",
+      image: [
+        "https://img.joomcdn.net/5856e198998182c309608e37bdd980f08f86c104_original.jpeg",
+        "https://img.joomcdn.net/da09480163eb956fb22df5700da946ec737dde24_original.jpeg",
+        "https://img.joomcdn.net/a2abff25849905fc2be6359f05f093a175bfc9c9_original.jpeg",
+        "https://img.joomcdn.net/97f3b9827021580fa24bd35404a90bba4770b11c_original.jpeg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "9",
+      name: "Winter Thickened Couple Snow Boots Plus Velvet Warm Non-slip Waterproof Men's and Women's Short Boots",
+      price: "10999",
+      image: [
+        "https://img.joomcdn.net/cb996961d8d4fa270682634ca504b5f972ddb85d_original.jpeg",
+        "https://img.joomcdn.net/ed33d290addd04575d339cda9c52e3231b56788a_original.jpeg",
+        "https://img.joomcdn.net/cca8a45d118ecb3d379c5dc342f8a60959df5e7c_original.jpeg",
+        "https://img.joomcdn.net/978d5c1c16aaa99a5a9a3292537d1d9ba0e328b6_original.jpeg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "10",
+      name: "Timberland Euro Rock Leather - Mens Winter Shoes Boots Leather Wheat TB0A2A9T231 Boots ORIGINAL",
+      price: "18057",
+      image: [
+        "https://img.joomcdn.net/6734dd02cb2b121f9cdea14f0bb396113fc7e50e_1024_909.jpeg",
+        "https://img.joomcdn.net/29eccd2c9e464b36007888308400cba5e7ab8440_1024_909.jpeg",
+        "https://img.joomcdn.net/31b7a5cd08c2ce9d179c0cfbda5c558fe7c74be1_1024_909.jpeg",
+        "https://img.joomcdn.net/31b7a5cd08c2ce9d179c0cfbda5c558fe7c74be1_1024_909.jpeg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "11",
+      name: "New Autumn and Winter Plus Cashmere Men's Sports Shoes Waterproof and Warm Outdoor Hiking Shoes High Boots",
+      price: "7999",
+      image: [
+        "https://img.joomcdn.net/761957b3b10447712c53c40852deb5b73a0e8c54_original.jpeg",
+        "https://img.joomcdn.net/761957b3b10447712c53c40852deb5b73a0e8c54_original.jpeg",
+        "https://img.joomcdn.net/01068a78c7713650a6534e147c9a5750125f42c4_original.jpeg",
+        "https://img.joomcdn.net/6a132feeff545e25fc9b23d56f0b5b06678eabf5_original.jpeg",
+      ],
+    },
+  },
+  {
+    data: {
+      id: "12",
+      name: "Men's Military Boot Combat Mens Ankle Boot Tactical Army Boot Male Shoes Work Shoes Winter Clambing Mountaineering Boot Aa",
+      price: "7499",
+      image: [
+        "https://img.joomcdn.net/54733fb07b17bc3e68a84e066da9221aa1392448_original.jpeg",
+        "https://img.joomcdn.net/5e69b9312e87c5714543c484b4ffb676a9e80aaa_original.jpeg",
+        "https://img.joomcdn.net/7554e493bfdcc4698855218e90abfcca18a2f33c_original.jpeg",
+        "https://img.joomcdn.net/c222be8bb4ce4580280fd8992f56b2698679f31c_original.jpeg",
+      ],
+    },
+  },
 ];
