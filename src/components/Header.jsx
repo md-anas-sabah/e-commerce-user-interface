@@ -4,7 +4,11 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../redux/toggleCartSlice";
 import { useUserAuth } from "../context/UserAuthContext";
-import { HomeIcon, ShoppingBagIcon } from "@heroicons/react/24/outline";
+import {
+  HomeIcon,
+  ShoppingBagIcon,
+  UserIcon,
+} from "@heroicons/react/24/outline";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -40,16 +44,16 @@ const Header = () => {
       <div className="flex flex-row relative mr-20 ">
         <div className="absolute right-60">
           <Link to="/home">
-            <HomeIcon className="h-10 w-10" />
+            <HomeIcon className="h-8 w-8" />
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
           {!user ? (
             <Link to="/login">
-              <p className="font-roboto font-bold ">
-                <PersonIcon fontSize="large" />
+              <button className="font-roboto font-bold flex items-center mr-10">
+                <UserIcon className="h-8 w-8" />
                 <span>Sign-In</span>
-              </p>
+              </button>
             </Link>
           ) : (
             <button onClick={handleLogOut}>
@@ -61,18 +65,18 @@ const Header = () => {
         <div className="flex right-40 absolute  ">
           <div className="flex relative ">
             <ShoppingBagIcon
-              className="cursor-pointer h-10 w-10"
+              className="cursor-pointer h-8 w-8"
               onClick={() => handleToggle()}
             />
-            <p className="font-bold font-roboto absolute top-4 right-4">
+            <p className="font-bold font-roboto text-sm absolute top-[0.6rem] right-3 select-none">
               {cartItem.length}
             </p>
           </div>
 
           {isOpenCart && (
-            <div className="absolute px-10 top-10 right-4 w-96 bg-white border border-black h-96 mt-1 flex flex-col">
+            <div className="absolute px-10 top-10 right-4 w-96 bg-white h-96 mt-1 flex flex-col shadow-2xl rounded-lg">
               {cartItem.length === 0 ? (
-                <div className="flex flex-col justify-center text-center">
+                <div className="flex flex-col justify-center text-center ">
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjhcG-tcVCpdyHukFOGZLaInyXFejYzMENQ&usqp=CAU"
                     alt="empty-logo"
