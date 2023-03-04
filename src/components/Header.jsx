@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import PersonIcon from "@mui/icons-material/Person";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../redux/toggleCartSlice";
