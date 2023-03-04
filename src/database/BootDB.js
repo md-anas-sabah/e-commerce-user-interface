@@ -51,4 +51,17 @@ export const boots = [
       ],
     },
   },
+  {
+    data: {
+      id: "5",
+      name: "New Winter Fashion Men's Sports Shoes Wear-resistant and Non-slip Plus Fleece Warm Shoes",
+      price: "1499",
+      image: [
+        "https://img.joomcdn.net/1d7ce5c5810b07eab873e7733239edd4ff83fe6d_original.jpeg",
+        "https://img.joomcdn.net/2d4afe9526d4cc339326e98afcffdf488f1edf45_original.jpeg",
+        "https://img.joomcdn.net/60bf544a29ef8234094a4b3f2cca40770d30f9b3_original.jpeg",
+        "https://img.joomcdn.net/1d7ce5c5810b07eab873e7733239edd4ff83fe6d_original.jpeg",
+      ],
+    },
+  },
 ];
