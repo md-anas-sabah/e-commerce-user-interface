@@ -32,4 +32,48 @@ export const Sports = [
       "https://img.joomcdn.net/85f73002150a35fb14978380fe0fa0a57162c79d_original.jpeg",
     ],
   },
+  {
+    id: "4",
+    name: "Children's Football Boots Rubber Soft Bottom Competition Training Children Football Shoes Boys",
+    price: "3999",
+    image: [
+      "https://img.joomcdn.net/7cd66f24033ac68c64d08dae57662ac81b8b3cd6_original.jpeg",
+      "https://img.joomcdn.net/90c82f290d8ceea904e4fb256a0ab59b8d29fc2b_original.jpeg",
+      "https://img.joomcdn.net/90c82f290d8ceea904e4fb256a0ab59b8d29fc2b_original.jpeg",
+      "https://img.joomcdn.net/088089fcda6bd4bd337f4c17083041707b758083_original.jpeg",
+    ],
+  },
+  {
+    id: "5",
+    name: "Men's Outdoor Leisure Sports Hiking Shoes",
+    price: "2599",
+    image: [
+      "https://img.joomcdn.net/0535fde0a999bfb5a4e08867bf088c7d65baa208_original.jpeg",
+      "https://img.joomcdn.net/50bb2af58f2d378eac562e83c6ecf54cdda19d19_original.jpeg",
+      "https://img.joomcdn.net/01d32976f8135a1dfae608b58b1cce718597c3f9_original.jpeg",
+      "https://img.joomcdn.net/94a2458d313de99a89d6caa3909f32cd81037064_original.jpeg",
+    ],
+  },
+  {
+    id: "6",
+    name: "New Men's High Boots Plus Velvet Thickening Men's and Women's Waterproof Outdoor Hiking Shoes Men's Non-slip Hiking Shoes",
+    price: "2000",
+    image: [
+      "https://img.joomcdn.net/cc484604f112ee07e1cbc3d44d90c007cc5ba781_original.jpeg",
+      "https://img.joomcdn.net/073e2fc7f88117fcdaac5b29dcc07a6cf60a2fba_original.jpeg",
+      "https://img.joomcdn.net/05dbee31e1e6e2374ed8101ab54dd284cdca1129_original.jpeg",
+      "https://img.joomcdn.net/0d69c388cf47c2df3a216c6f59710fe693fa5451_original.jpeg",
+    ],
+  },
+  {
+    id: "7",
+    name: "Men's Autumn and Winter Outdoor Non-slip Waterproof Large Size Hiking Tourism Hiking Shoes",
+    price: "1599",
+    image: [
+      "https://img.joomcdn.net/a5ad593429a4b3ff5b0acb18a99f353191dd652e_original.jpeg",
+      "https://img.joomcdn.net/4ad7c842c2fdb5aad79a7ea96ab155e8433e9496_original.jpeg",
+      "https://img.joomcdn.net/8edf53cf31b7b3223dba0d0a287d0e2dc557fe0d_original.jpeg",
+      "https://img.joomcdn.net/3346a01774eb0f451c28570386ffb4bc20861c6d_original.jpeg",
+    ],
+  },
 ];
