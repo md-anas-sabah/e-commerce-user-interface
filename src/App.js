@@ -13,6 +13,7 @@ const FormalSection = lazy(() => import("./pages/FormalSection"));
 const CasualSection = lazy(() => import("./pages/CasualSection"));
 const SportsSection = lazy(() => import("./pages/SportsSection"));
 const AthleisureSection = lazy(() => import("./pages/AthleisureSection"));
+const Home = lazy(() => import("./pages/Home"));
 
 const AppLayout = () => {
   return (
@@ -71,6 +72,14 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense>
             <AthleisureSection />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/home",
+        element: (
+          <Suspense>
+            <Home />
           </Suspense>
         ),
       },

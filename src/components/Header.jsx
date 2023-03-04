@@ -5,6 +5,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../redux/toggleCartSlice";
 import { useUserAuth } from "../context/UserAuthContext";
+import { HomeIcon, ShoppingBagIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -38,6 +39,11 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex flex-row relative mr-20 ">
+        <div className="absolute right-60">
+          <Link to="/home">
+            <HomeIcon className="h-10 w-10" />
+          </Link>
+        </div>
         <div className="flex flex-col items-center justify-center">
           {!user ? (
             <Link to="/login">
@@ -54,13 +60,14 @@ const Header = () => {
           )}
         </div>
         <div className="flex right-40 absolute  ">
-          <div className="flex ">
-            <ShoppingBasketIcon
-              className="cursor-pointer"
-              fontSize="large"
+          <div className="flex relative ">
+            <ShoppingBagIcon
+              className="cursor-pointer h-10 w-10"
               onClick={() => handleToggle()}
             />
-            <p className="font-bold font-roboto ">{cartItem.length} </p>
+            <p className="font-bold font-roboto absolute top-4 right-4">
+              {cartItem.length}
+            </p>
           </div>
 
           {isOpenCart && (
