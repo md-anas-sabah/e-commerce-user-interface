@@ -37,7 +37,7 @@ const Header = () => {
           </h1>
         </Link>
       </div>
-      <div className="flex flex-row relative mr-20 gap-60">
+      <div className="flex flex-row relative mr-20 ">
         <div className="flex flex-col items-center justify-center">
           {!user ? (
             <Link to="/login">
@@ -53,7 +53,7 @@ const Header = () => {
             </button>
           )}
         </div>
-        <div className="flex right-72 absolute  ">
+        <div className="flex right-40 absolute  ">
           <div className="flex ">
             <ShoppingBasketIcon
               className="cursor-pointer"
