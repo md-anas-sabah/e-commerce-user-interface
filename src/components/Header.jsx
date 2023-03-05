@@ -9,6 +9,7 @@ import {
   ShoppingBagIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
+import CartCard from "./CartCard";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const Header = () => {
   const isOpenCart = useSelector((store) => store.toggleCart.isOpenCart);
   const { user, logout } = useUserAuth();
   const navigate = useNavigate();
-
+  console.log(cartItem);
   // console.log(user);
 
   const handleToggle = () => {
@@ -85,7 +86,9 @@ const Header = () => {
                 </div>
               ) : (
                 <div className="">
-                  <h1>Coming Soon🚀</h1>
+                  {cartItem.map((item) => {
+                    return <CartCard {...item.data} />;
+                  })}
                 </div>
               )}
             </div>

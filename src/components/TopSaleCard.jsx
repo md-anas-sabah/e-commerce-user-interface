@@ -1,5 +1,5 @@
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addItem } from "../redux/cartSlice";
 const TopSaleCard = ({ name, price, image }) => {
   const dispatch = useDispatch();
