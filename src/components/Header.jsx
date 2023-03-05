@@ -10,6 +10,7 @@ import {
   UserIcon,
 } from "@heroicons/react/24/outline";
 import CartCard from "./CartCard";
+import { useState } from "react";
 
 const Header = () => {
   const dispatch = useDispatch();
