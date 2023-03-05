@@ -9,7 +9,6 @@ const SportsContainer = () => {
   const handleCartItems = (c) => {
     dispatch(addItem(c));
   };
-
   return (
     <>
       <div>
