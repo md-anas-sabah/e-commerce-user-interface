@@ -95,8 +95,12 @@ const Header = () => {
                       );
                     })}
                   </div>
-                  <div className="bg-black">
-                    <button className="text-white ">Go to Checkout</button>
+                  <div className="bg-black h-14 items-center flex justify-center">
+                    <Link to="/checkout">
+                      <button className="text-white w-96">
+                        Go to Checkout
+                      </button>
+                    </Link>
                   </div>
                 </>
               )}
