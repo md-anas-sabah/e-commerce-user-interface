@@ -75,7 +75,7 @@ const Header = () => {
           </div>
 
           {isOpenCart && (
-            <div className="absolute px-10 top-10 right-4 w-96 bg-white h-96 mt-1 flex flex-col shadow-2xl rounded-lg">
+            <div className="absolute top-10 right-4 w-96 bg-white h-96 mt-1 flex flex-col shadow-2xl rounded-lg">
               {cartItem.length === 0 ? (
                 <div className="flex flex-col justify-center text-center ">
                   <img
@@ -85,11 +85,20 @@ const Header = () => {
                   />
                 </div>
               ) : (
-                <div className="">
-                  {cartItem.map((item) => {
-                    return <CartCard {...item.data} />;
-                  })}
-                </div>
+                <>
+                  <div className="h-96 overflow-scroll">
+                    {cartItem.map((item) => {
+                      return (
+                        <div className="flex flex-col gap-3">
+                          <CartCard {...item.data} key={item.data.key} />
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div className="bg-black">
+                    <button className="text-white ">Go to Checkout</button>
+                  </div>
+                </>
               )}
             </div>
           )}

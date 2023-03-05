@@ -14,6 +14,7 @@ const CasualSection = lazy(() => import("./pages/CasualSection"));
 const SportsSection = lazy(() => import("./pages/SportsSection"));
 const AthleisureSection = lazy(() => import("./pages/AthleisureSection"));
 const Home = lazy(() => import("./pages/Home"));
+const Checkout = lazy(() => import("./pages/Checkout"));
 
 const AppLayout = () => {
   return (
@@ -80,6 +81,14 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense>
             <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/checkout",
+        element: (
+          <Suspense>
+            <Checkout />
           </Suspense>
         ),
       },

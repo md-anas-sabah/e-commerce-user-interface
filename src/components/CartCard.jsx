@@ -1,19 +1,18 @@
 const CartCard = ({ name, price, image }) => {
   return (
-    <div className="flex items-center bg-gray-900 shadow rounded-lg gap-3">
-      <div className="rounded-lg aspect-video overflow-hidden object-cover  ">
+    <div className="flex flex-row rounded-lg gap-10">
+      <div className="rounded-lg overflow-hidden object-cover  ">
         <img
           src={image}
           alt="img"
-          className="h-40 w-40 text-gray-400 bg-gray-900"
+          className="h-14 w-14 text-gray-400 object-cover"
         />
       </div>
-      <div className="flex flex-col  bg-gray-400 w-3/6 ">
-        <h2 className="font-bold text-2xl text-gray-400 bg-gray-900">{name}</h2>
-
-        <h4 className="font-semibold text-gray-400 bg-gray-900">
-          {`Cost ₹${price}`}
-        </h4>
+      <div className="flex flex-col w-[250px]">
+        <h2 className="text-lg text-black font-extralight font-roboto truncate ">
+          {name}
+        </h2>
+        <h4 className=" text-gray-400 font-roboto">{`₹${price}`}</h4>
       </div>
     </div>
   );
