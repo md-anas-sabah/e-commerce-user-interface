@@ -1,9 +1,9 @@
 const CartCard = ({ name, price, image }) => {
   return (
-    <div className="flex flex-row rounded-lg gap-10">
-      <div className="rounded-lg overflow-hidden object-cover flex-1 h-20 w-20">
+    <div className="flex flex-row rounded-lg gap-8 mt-1">
+      <div className="rounded-lg overflow-hidden  object-cover flex-1 h-20 w-20">
         <img
-          src={image[1]}
+          src={image[0]}
           alt="img"
           className="h-20 w-20 text-gray-400 object-cover"
         />

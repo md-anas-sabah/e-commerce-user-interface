@@ -89,7 +89,7 @@ const Header = () => {
                   <div className="h-96 overflow-scroll">
                     {cartItem.map((item) => {
                       return (
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col">
                           <CartCard {...item.data} key={item.data.key} />
                         </div>
                       );
