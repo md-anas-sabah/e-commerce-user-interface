@@ -9,7 +9,9 @@ const Checkout = () => {
   });
   const cartItem = useSelector((store) => store.cart.items);
 
-  return <div></div>;
+  return <div>
+    <h1>Cart Will be Shown here</h1>
+  </div>;
 };
 
 export default Checkout;
