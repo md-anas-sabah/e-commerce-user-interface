@@ -9,8 +9,11 @@ const toggleCartSlice = createSlice({
     toggle: (state) => {
       state.isOpenCart = !state.isOpenCart;
     },
+    closeCart: (state) => {
+      state.isOpenCart = false;
+    },
   },
 });
 
-export const { toggle } = toggleCartSlice.actions;
+export const { toggle, closeCart } = toggleCartSlice.actions;
 export default toggleCartSlice.reducer;
