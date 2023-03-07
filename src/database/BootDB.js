@@ -1,7 +1,8 @@
 export const boots = [
   {
     data: {
-      id: "1",
+      id: "87213981273",
+      amount: 1,
       name: "Italian Suede Boots Handmade with Closure High Top Plush Thickening Men's Casual Shoes Cotton Shoes Toe Leather Martin Boots Men Winter Shoes",
       price: "2940",
       image: [
@@ -14,7 +15,8 @@ export const boots = [
   },
   {
     data: {
-      id: "2",
+      id: "12312",
+      amount: 1,
       name: "New Winter Men's Plus Velvet Sneakers Non-slip Water Proof Keep Warm High Boots",
       price: "6943",
       image: [
@@ -27,7 +29,8 @@ export const boots = [
   },
   {
     data: {
-      id: "3",
+      id: "25435",
+      amount: 1,
       name: "Autumn Winter Warm Men's Martin Boots Plush Thick Shoes Khaki Zipper Casual Sneakers Anti-slip and Waterproof",
       price: "6126",
       image: [
@@ -40,7 +43,8 @@ export const boots = [
   },
   {
     data: {
-      id: "4",
+      id: "252341",
+      amount: 1,
       name: "New Plus Fleece Warm Sports Shoes Men's and Women's Winter Plus Size Outdoor Leisure All-match Couple Shoes Snow Boots",
       price: "3499",
       image: [
@@ -53,7 +57,8 @@ export const boots = [
   },
   {
     data: {
-      id: "5",
+      id: "2352412312",
+      amount: 1,
       name: "New Winter Fashion Men's Sports Shoes Wear-resistant and Non-slip Plus Fleece Warm Shoes",
       price: "1499",
       image: [
@@ -66,7 +71,8 @@ export const boots = [
   },
   {
     data: {
-      id: "6",
+      id: "x83811buf2",
+      amount: 1,
       name: "New Autumn and Winter Men's High-top Leather Boots Non-slip Water Proof Plus Velvet Warm Thick Men's Business Leather Shoes",
       price: "7108",
       image: [
@@ -79,7 +85,8 @@ export const boots = [
   },
   {
     data: {
-      id: "7",
+      id: "12e1e12d21",
+      amount: 1,
       name: "New Autumn and Winter Plus Velvet Thick Warm High-top Shoes Men's Non-slip Leather Martin Boots",
       price: "8988",
       image: [
@@ -92,7 +99,8 @@ export const boots = [
   },
   {
     data: {
-      id: "8",
+      id: "12d12d12e",
+      amount: 1,
       name: "Men's and Women's Plus Velvet Warm Cotton Sneakers Men's Winter Warm High-top Boots",
       price: "5885",
       image: [
@@ -105,7 +113,8 @@ export const boots = [
   },
   {
     data: {
-      id: "9",
+      id: "d12e312",
+      amount: 1,
       name: "Winter Thickened Couple Snow Boots Plus Velvet Warm Non-slip Waterproof Men's and Women's Short Boots",
       price: "10999",
       image: [
@@ -118,7 +127,8 @@ export const boots = [
   },
   {
     data: {
-      id: "10",
+      id: "121121d12",
+      amount: 1,
       name: "Timberland Euro Rock Leather - Mens Winter Shoes Boots Leather Wheat TB0A2A9T231 Boots ORIGINAL",
       price: "18057",
       image: [
@@ -131,7 +141,8 @@ export const boots = [
   },
   {
     data: {
-      id: "11",
+      id: "1423121ddsa1",
+      amount: 1,
       name: "New Autumn and Winter Plus Cashmere Men's Sports Shoes Waterproof and Warm Outdoor Hiking Shoes High Boots",
       price: "7999",
       image: [
@@ -144,7 +155,8 @@ export const boots = [
   },
   {
     data: {
-      id: "12",
+      id: "1221e12eff",
+      amount: 1,
       name: "Men's Military Boot Combat Mens Ankle Boot Tactical Army Boot Male Shoes Work Shoes Winter Clambing Mountaineering Boot Aa",
       price: "7499",
       image: [

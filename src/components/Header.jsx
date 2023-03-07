@@ -18,7 +18,7 @@ const Header = () => {
   const isOpenCart = useSelector((store) => store.toggleCart.isOpenCart);
   const { user, logout } = useUserAuth();
   const navigate = useNavigate();
-  console.log(cartItem);
+  // console.log(cartItem);
   // console.log(user);
 
   const handleToggle = () => {
