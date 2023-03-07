@@ -1,7 +1,8 @@
 export const Store = [
   {
     data: {
-      id: "1",
+      id: "sp33eee",
+      amount: 1,
       name: "Materia Mod Camel",
       price: "2000",
       image: [
@@ -14,7 +15,8 @@ export const Store = [
   },
   {
     data: {
-      id: "2",
+      id: "2stkkdsjns",
+      amount: 1,
       name: "Nook Black",
       price: "1500",
       image: [
@@ -27,7 +29,8 @@ export const Store = [
   },
   {
     data: {
-      id: "3",
+      id: "3sadmxzsas",
+      amount: 1,
       name: "Deimos dark",
       price: "1375",
       image: [
@@ -40,7 +43,8 @@ export const Store = [
   },
   {
     data: {
-      id: "4",
+      id: "tyshsnsbasnnb",
+      amount: 1,
       name: "Plump Skin",
       price: "1375",
       image: [
@@ -53,7 +57,8 @@ export const Store = [
   },
   {
     data: {
-      id: "5",
+      id: "5skiusgsb",
+      amount: 1,
       name: "Deimos Beige",
       price: "1500",
       image: [
@@ -66,7 +71,8 @@ export const Store = [
   },
   {
     data: {
-      id: "6",
+      id: "xbdnssksksk344",
+      amount: 1,
       name: "Deimos Black",
       price: "1375",
       image: [
@@ -79,7 +85,8 @@ export const Store = [
   },
   {
     data: {
-      id: "7",
+      id: "xmamasjduwu",
+      amount: 1,
       name: "Nook Light",
       price: "2000",
       image: [
@@ -92,7 +99,8 @@ export const Store = [
   },
   {
     data: {
-      id: "8",
+      id: "bshahasjkzkzkak",
+      amount: 1,
       name: "Plump Black",
       price: "2000",
       image: [
@@ -105,7 +113,8 @@ export const Store = [
   },
   {
     data: {
-      id: "9",
+      id: "snsjsjsisiwj",
+      amount: 1,
       name: "Oasis Blue",
       price: "5499",
       image: [
@@ -118,7 +127,8 @@ export const Store = [
   },
   {
     data: {
-      id: "10",
+      id: "zmsnsj2234",
+      amount: 1,
       name: "Fossil Green",
       price: "1499",
       image: [
@@ -131,7 +141,8 @@ export const Store = [
   },
   {
     data: {
-      id: "11",
+      id: "wwjwwnsn",
+      amount: 1,
       name: "Slip-ons Ikos 33671 40 Black Leather",
       price: "8560",
       image: [
@@ -144,7 +155,8 @@ export const Store = [
   },
   {
     data: {
-      id: "12",
+      id: "2132nensjsj",
+      amount: 1,
       name: "Men Ballroom Dance Shoes Latin Waltz Tango Lether Shoes Low Heel Soft Bottom",
       price: "1200",
       image: [
@@ -157,7 +169,8 @@ export const Store = [
   },
   {
     data: {
-      id: "13",
+      id: "anajwjqjk",
+      amount: 1,
       name: "Size 45 Mens Lightweight Sneakers Gym Running Shoes Walking Sport Breathable Mesh Casual Shoes",
       price: "799",
       image: [
@@ -170,7 +183,8 @@ export const Store = [
   },
   {
     data: {
-      id: "14",
+      id: "2i3inwjqwjk",
+      amount: 1,
       name: "New Sports and Leisure Shoes Comfortable and Breathable Running Shoes Outdoor Travel Shoes",
       price: "500",
       image: [
@@ -183,7 +197,8 @@ export const Store = [
   },
   {
     data: {
-      id: "15",
+      id: "nsnskql",
+      amount: 1,
       name: "2022 New Men's Casual Sneakers Men's Shock-absorbing Running Shoes Korean Style Mesh Breathable Trendy Shoes",
       price: "1000",
       image: [
@@ -196,7 +211,8 @@ export const Store = [
   },
   {
     data: {
-      id: "16",
+      id: "asjwjejwjkqwjk",
+      amount: 1,
       name: "Nike Air Max SC - Mens Shoes Black CW4555-002 Sneakers Sport Shoes ORIGINAL",
       price: "4200",
       image: [
@@ -209,7 +225,8 @@ export const Store = [
   },
   {
     data: {
-      id: "17",
+      id: "jjwkwkwkwk",
+      amount: 1,
       name: "Men Sneakers Running Walking Shoes Casual Breathable Flat Air Mesh Lace Up Shoes",
       price: "1100",
       image: [
@@ -222,7 +239,8 @@ export const Store = [
   },
   {
     data: {
-      id: "18",
+      id: "jsajsjwqo",
+      amount: 1,
       name: "Adidas X Quesence X Solebox - Italian Leathers - Mens Shoes Leather Clear-White DB1785 Sneakers Sports Shoes ORIGINAL",
       price: "7860",
       image: [
@@ -235,7 +253,8 @@ export const Store = [
   },
   {
     data: {
-      id: "19",
+      id: "nsanaskaslk",
+      amount: 1,
       name: "JORDAN 1 Low FlyEase - Men's Shoes Leather White-Red DM1206-163 Sneakers Sport Shoes ORIGINAL",
       price: "10999",
       image: [
@@ -248,7 +267,8 @@ export const Store = [
   },
   {
     data: {
-      id: "20",
+      id: "masnxnslal",
+      amount: 1,
       name: "Adidas Originals OZELIA - Men's Sneakers Black H04250 Retro Shoes Sports Shoes ORIGINAL",
       price: "4599",
       image: [
@@ -261,7 +281,8 @@ export const Store = [
   },
   {
     data: {
-      id: "21",
+      id: "jsjsiwo12321",
+      amount: 1,
       name: "ONEMIX High Top Men Running Shoes Waterproof Sneakers For Outdoor Sports Walking Jogging Treckking Shoes",
       price: "3540",
       image: [
@@ -274,7 +295,8 @@ export const Store = [
   },
   {
     data: {
-      id: "22",
+      id: "kmsnaji21",
+      amount: 1,
       name: "Nike Air Max Terrascape Plus TN - Mens Shoes White DN4590-100 Sneakers Sport Shoes ORIGINAL",
       price: "6599",
       image: [
@@ -287,7 +309,8 @@ export const Store = [
   },
   {
     data: {
-      id: "23",
+      id: "itkasklak12",
+      amount: 1,
       name: "PUMA Caven - Men's Leisure Shoes White 380810-02 Sneakers Sport Shoes ORIGINAL",
       price: "2999",
       image: [
@@ -300,7 +323,8 @@ export const Store = [
   },
   {
     data: {
-      id: "24",
+      id: "nmsnasn213",
+      amount: 1,
       name: "New Spring and Summer Men's Sneakers Lightweight Breathable Non-slip Men's Plimsolls Running Canvas Shoes",
       price: "849",
       image: [
@@ -313,7 +337,8 @@ export const Store = [
   },
   {
     data: {
-      id: "25",
+      id: "snsjkak13",
+      amount: 1,
       name: "Italian Suede Boots Handmade with Closure High Top Plush Thickening Men's Casual Shoes Cotton Shoes Toe Leather Martin Boots Men Winter Shoes",
       price: "2940",
       image: [
@@ -326,7 +351,8 @@ export const Store = [
   },
   {
     data: {
-      id: "26",
+      id: "tgshakkj123",
+      amount: 1,
       name: "New Winter Men's Plus Velvet Sneakers Non-slip Water Proof Keep Warm High Boots",
       price: "6943",
       image: [
@@ -339,7 +365,8 @@ export const Store = [
   },
   {
     data: {
-      id: "27",
+      id: "mnsjhan123",
+      amount: 1,
       name: "Autumn Winter Warm Men's Martin Boots Plush Thick Shoes Khaki Zipper Casual Sneakers Anti-slip and Waterproof",
       price: "6126",
       image: [
@@ -352,7 +379,8 @@ export const Store = [
   },
   {
     data: {
-      id: "28",
+      id: "eszzzbxjshj23",
+      amount: 1,
       name: "New Plus Fleece Warm Sports Shoes Men's and Women's Winter Plus Size Outdoor Leisure All-match Couple Shoes Snow Boots",
       price: "3499",
       image: [
@@ -365,7 +393,8 @@ export const Store = [
   },
   {
     data: {
-      id: "29",
+      id: "6213647",
+      amount: 1,
       name: "New Winter Fashion Men's Sports Shoes Wear-resistant and Non-slip Plus Fleece Warm Shoes",
       price: "1499",
       image: [
@@ -378,7 +407,8 @@ export const Store = [
   },
   {
     data: {
-      id: "30",
+      id: "iu3y32ty12uy",
+      amount: 1,
       name: "New Autumn and Winter Men's High-top Leather Boots Non-slip Water Proof Plus Velvet Warm Thick Men's Business Leather Shoes",
       price: "7108",
       image: [
@@ -391,7 +421,8 @@ export const Store = [
   },
   {
     data: {
-      id: "31",
+      id: "3yt2i2",
+      amount: 1,
       name: "New Autumn and Winter Plus Velvet Thick Warm High-top Shoes Men's Non-slip Leather Martin Boots",
       price: "8988",
       image: [
@@ -404,7 +435,8 @@ export const Store = [
   },
   {
     data: {
-      id: "32",
+      id: "4829201",
+      amount: 1,
       name: "Men's and Women's Plus Velvet Warm Cotton Sneakers Men's Winter Warm High-top Boots",
       price: "5885",
       image: [
@@ -417,7 +449,8 @@ export const Store = [
   },
   {
     data: {
-      id: "33",
+      id: "132452342",
+      amount: 1,
       name: "Winter Thickened Couple Snow Boots Plus Velvet Warm Non-slip Waterproof Men's and Women's Short Boots",
       price: "10999",
       image: [
@@ -430,7 +463,8 @@ export const Store = [
   },
   {
     data: {
-      id: "34",
+      id: "42135125132",
+      amount: 1,
       name: "Timberland Euro Rock Leather - Mens Winter Shoes Boots Leather Wheat TB0A2A9T231 Boots ORIGINAL",
       price: "18057",
       image: [
@@ -443,7 +477,8 @@ export const Store = [
   },
   {
     data: {
-      id: "35",
+      id: "353125126",
+      amount: 1,
       name: "New Autumn and Winter Plus Cashmere Men's Sports Shoes Waterproof and Warm Outdoor Hiking Shoes High Boots",
       price: "7999",
       image: [
@@ -456,7 +491,8 @@ export const Store = [
   },
   {
     data: {
-      id: "36",
+      id: "6123143124",
+      amount: 1,
       name: "Men's Military Boot Combat Mens Ankle Boot Tactical Army Boot Male Shoes Work Shoes Winter Clambing Mountaineering Boot Aa",
       price: "7499",
       image: [
@@ -469,7 +505,8 @@ export const Store = [
   },
   {
     data: {
-      id: "37",
+      id: "53163123",
+      amount: 1,
       name: "Casual Big Size Men Shoes",
       price: "3500",
       image: [
@@ -482,7 +519,8 @@ export const Store = [
   },
   {
     data: {
-      id: "38",
+      id: "53263214",
+      amount: 1,
       name: "Men Oxford Shoes Leather",
       price: "4000",
       image: [
@@ -495,7 +533,8 @@ export const Store = [
   },
   {
     data: {
-      id: "39",
+      id: "123431253512",
+      amount: 1,
       name: "Men's Leather Pointed Toe Business Shoes",
       price: "2999",
       image: [
@@ -508,7 +547,8 @@ export const Store = [
   },
   {
     data: {
-      id: "40",
+      id: "23523532512",
+      amount: 1,
       name: "New Men's Shoes Large Size Casual",
       price: "1599",
       image: [
@@ -521,7 +561,8 @@ export const Store = [
   },
   {
     data: {
-      id: "41",
+      id: "45523231",
+      amount: 1,
       name: "Leather Shoes Genuine Leather England",
       price: "9999",
       image: [
@@ -534,7 +575,8 @@ export const Store = [
   },
   {
     data: {
-      id: "42",
+      id: "35126312",
+      amount: 1,
       name: "Casual Shoes Men's Patent Leather Zipper Decorative",
       price: "7999",
       image: [
@@ -547,7 +589,8 @@ export const Store = [
   },
   {
     data: {
-      id: "43",
+      id: "324235322",
+      amount: 1,
       name: "Casual Shoes Men's Patent Leather Zipper Decorative",
       price: "7999",
       image: [
@@ -560,7 +603,8 @@ export const Store = [
   },
   {
     data: {
-      id: "44",
+      id: "32523523236",
+      amount: 1,
       name: "Black Men's Business Leather Shoes Breathable",
       price: "3999",
       image: [
@@ -573,7 +617,8 @@ export const Store = [
   },
   {
     data: {
-      id: "45",
+      id: "3254645235423",
+      amount: 1,
       name: "New Spring and Autumn Men's Lace Up Leather Shoes",
       price: "3599",
       image: [
@@ -586,7 +631,8 @@ export const Store = [
   },
   {
     data: {
-      id: "46",
+      id: "326325235",
+      amount: 1,
       name: "New Business Casual Men's Leather Shoes Soft Bottom",
       price: "3199",
       image: [
@@ -599,7 +645,8 @@ export const Store = [
   },
   {
     data: {
-      id: "47",
+      id: "3252323632",
+      amount: 1,
       name: "Shoes Konors 1164 40 Black Leather",
       price: "10199",
       image: [
@@ -612,7 +659,8 @@ export const Store = [
   },
   {
     data: {
-      id: "48",
+      id: "2352362632532",
+      amount: 1,
       name: "Slip-ons Ikos 33671 40 Black Leather",
       price: "8560",
       image: [
@@ -625,7 +673,8 @@ export const Store = [
   },
   {
     data: {
-      id: "49",
+      id: "23532523523",
+      amount: 1,
       name: "Men Ballroom Dance Shoes Latin Waltz Tango Lether Shoes Low Heel Soft Bottom",
       price: "1200",
       image: [
@@ -638,7 +687,8 @@ export const Store = [
   },
   {
     data: {
-      id: "50",
+      id: "352523632",
+      amount: 1,
       name: "Oxfords Ikos 33661 40 Black Leather",
       price: "2299",
       image: [
@@ -651,7 +701,8 @@ export const Store = [
   },
   {
     data: {
-      id: "51",
+      id: "679676",
+      amount: 1,
       name: "Derby Ikos 34081 40 Black Leather",
       price: "5499",
       image: [
@@ -664,7 +715,8 @@ export const Store = [
   },
   {
     data: {
-      id: "52",
+      id: "967967976",
+      amount: 1,
       name: "Derby Ikos 33669 39 Black-burgundy Leather",
       price: "3999",
       image: [
@@ -677,7 +729,8 @@ export const Store = [
   },
   {
     data: {
-      id: "53",
+      id: "7696796744nn",
+      amount: 1,
       name: "28-38 High Quality Teen Fashion Anti-slip Wear-resistant Rubber Bottom Football Shoes Children's Football Shoes",
       price: "4494",
       image: [
@@ -690,7 +743,8 @@ export const Store = [
   },
   {
     data: {
-      id: "54",
+      id: "685756ggdf",
+      amount: 1,
       name: "28-39 Children's High-quality Rotating Buttons Football Football Children's Patent Leather Art Format Lawn Training Football Boots",
       price: "6945",
       image: [
@@ -703,7 +757,8 @@ export const Store = [
   },
   {
     data: {
-      id: "55",
+      id: "4546457457",
+      amount: 1,
       name: "Men's High Top Professional Competition Long Spike Sports Football Shoes High Quality Comfortable Men's Soccer Shoes",
       price: "7548",
       image: [
@@ -716,7 +771,8 @@ export const Store = [
   },
   {
     data: {
-      id: "56",
+      id: "5464564244",
+      amount: 1,
       name: "Children's Football Boots Rubber Soft Bottom Competition Training Children Football Shoes Boys",
       price: "3999",
       image: [
@@ -729,7 +785,8 @@ export const Store = [
   },
   {
     data: {
-      id: "57",
+      id: "52523523523",
+      amount: 1,
       name: "Men's Outdoor Leisure Sports Hiking Shoes",
       price: "2599",
       image: [
@@ -742,7 +799,8 @@ export const Store = [
   },
   {
     data: {
-      id: "58",
+      id: "457567456",
+      amount: 1,
       name: "New Men's High Boots Plus Velvet Thickening Men's and Women's Waterproof Outdoor Hiking Shoes Men's Non-slip Hiking Shoes",
       price: "2000",
       image: [
@@ -755,7 +813,8 @@ export const Store = [
   },
   {
     data: {
-      id: "59",
+      id: "sdnfsdmbsj",
+      amount: 1,
       name: "Men's Autumn and Winter Outdoor Non-slip Waterproof Large Size Hiking Tourism Hiking Shoes",
       price: "1599",
       image: [
