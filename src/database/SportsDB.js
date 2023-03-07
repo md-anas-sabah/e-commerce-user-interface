@@ -1,7 +1,8 @@
 export const Sports = [
   {
     data: {
-      id: "1",
+      id: "sp1233412",
+      amount: 1,
       name: "28-38 High Quality Teen Fashion Anti-slip Wear-resistant Rubber Bottom Football Shoes Children's Football Shoes",
       price: "4494",
       image: [
@@ -14,7 +15,8 @@ export const Sports = [
   },
   {
     data: {
-      id: "2",
+      id: "sp1ddee2",
+      amount: 1,
       name: "28-39 Children's High-quality Rotating Buttons Football Football Children's Patent Leather Art Format Lawn Training Football Boots",
       price: "6945",
       image: [
@@ -27,7 +29,8 @@ export const Sports = [
   },
   {
     data: {
-      id: "3",
+      id: "sp123edd",
+      amount: 1,
       name: "Men's High Top Professional Competition Long Spike Sports Football Shoes High Quality Comfortable Men's Soccer Shoes",
       price: "7548",
       image: [
@@ -40,7 +43,8 @@ export const Sports = [
   },
   {
     data: {
-      id: "4",
+      id: "sp953nnn",
+      amount: 1,
       name: "Children's Football Boots Rubber Soft Bottom Competition Training Children Football Shoes Boys",
       price: "3999",
       image: [
@@ -53,7 +57,8 @@ export const Sports = [
   },
   {
     data: {
-      id: "5",
+      id: "sp012444",
+      amount: 1,
       name: "Men's Outdoor Leisure Sports Hiking Shoes",
       price: "2599",
       image: [
@@ -66,7 +71,8 @@ export const Sports = [
   },
   {
     data: {
-      id: "6",
+      id: "sp21444nfnf",
+      amount: 1,
       name: "New Men's High Boots Plus Velvet Thickening Men's and Women's Waterproof Outdoor Hiking Shoes Men's Non-slip Hiking Shoes",
       price: "2000",
       image: [
@@ -79,7 +85,8 @@ export const Sports = [
   },
   {
     data: {
-      id: "7",
+      id: "spxmmkzzkkk",
+      amount: 1,
       name: "Men's Autumn and Winter Outdoor Non-slip Waterproof Large Size Hiking Tourism Hiking Shoes",
       price: "1599",
       image: [
