@@ -1,7 +1,8 @@
 export const casual = [
   {
     data: {
-      id: "1",
+      id: "1dwd31",
+      amount: 1,
       name: "Size 45 Mens Lightweight Sneakers Gym Running Shoes Walking Sport Breathable Mesh Casual Shoes",
       price: "799",
       image: [
@@ -14,7 +15,8 @@ export const casual = [
   },
   {
     data: {
-      id: "2",
+      id: "ezkask2131kf",
+      amount: 1,
       name: "New Sports and Leisure Shoes Comfortable and Breathable Running Shoes Outdoor Travel Shoes",
       price: "500",
       image: [
@@ -27,7 +29,8 @@ export const casual = [
   },
   {
     data: {
-      id: "3",
+      id: "asw232vv",
+      amount: 1,
       name: "2022 New Men's Casual Sneakers Men's Shock-absorbing Running Shoes Korean Style Mesh Breathable Trendy Shoes",
       price: "1000",
       image: [
@@ -40,7 +43,8 @@ export const casual = [
   },
   {
     data: {
-      id: "4",
+      id: "423dsccxz",
+      amount: 1,
       name: "Nike Air Max SC - Mens Shoes Black CW4555-002 Sneakers Sport Shoes ORIGINAL",
       price: "4200",
       image: [
@@ -53,7 +57,8 @@ export const casual = [
   },
   {
     data: {
-      id: "5",
+      id: "223dseq",
+      amount: 1,
       name: "Men Sneakers Running Walking Shoes Casual Breathable Flat Air Mesh Lace Up Shoes",
       price: "1100",
       image: [
@@ -66,7 +71,8 @@ export const casual = [
   },
   {
     data: {
-      id: "6",
+      id: "120cnxx",
+      amount: 1,
       name: "Adidas X Quesence X Solebox - Italian Leathers - Mens Shoes Leather Clear-White DB1785 Sneakers Sports Shoes ORIGINAL",
       price: "7860",
       image: [
@@ -79,7 +85,8 @@ export const casual = [
   },
   {
     data: {
-      id: "7",
+      id: "zzcasq124df",
+      amount: 1,
       name: "JORDAN 1 Low FlyEase - Men's Shoes Leather White-Red DM1206-163 Sneakers Sport Shoes ORIGINAL",
       price: "10999",
       image: [
@@ -92,7 +99,8 @@ export const casual = [
   },
   {
     data: {
-      id: "8",
+      id: "eecdop0s8s",
+      amount: 1,
       name: "Adidas Originals OZELIA - Men's Sneakers Black H04250 Retro Shoes Sports Shoes ORIGINAL",
       price: "4599",
       image: [
@@ -105,7 +113,8 @@ export const casual = [
   },
   {
     data: {
-      id: "9",
+      id: "zxcd324f",
+      amount: 1,
       name: "ONEMIX High Top Men Running Shoes Waterproof Sneakers For Outdoor Sports Walking Jogging Treckking Shoes",
       price: "3540",
       image: [
@@ -118,7 +127,8 @@ export const casual = [
   },
   {
     data: {
-      id: "10",
+      id: "zcew32213",
+      amount: 1,
       name: "Nike Air Max Terrascape Plus TN - Mens Shoes White DN4590-100 Sneakers Sport Shoes ORIGINAL",
       price: "6599",
       image: [
@@ -131,7 +141,8 @@ export const casual = [
   },
   {
     data: {
-      id: "11",
+      id: "czcdsed2112",
+      amount: 1,
       name: "PUMA Caven - Men's Leisure Shoes White 380810-02 Sneakers Sport Shoes ORIGINAL",
       price: "2999",
       image: [
@@ -144,7 +155,8 @@ export const casual = [
   },
   {
     data: {
-      id: "12",
+      id: "cxzcew321",
+      amount: 1,
       name: "New Spring and Summer Men's Sneakers Lightweight Breathable Non-slip Men's Plimsolls Running Canvas Shoes",
       price: "849",
       image: [
