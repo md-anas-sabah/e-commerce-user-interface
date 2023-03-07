@@ -1,6 +1,8 @@
+import { display } from "@mui/system";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CheckoutCard from "../components/CheckoutCard";
+import { calculateTotals } from "../redux/cartSlice";
 import { closeCart } from "../redux/toggleCartSlice";
 
 const Checkout = () => {
@@ -10,10 +12,15 @@ const Checkout = () => {
   });
   const { items, amount, total } = useSelector((store) => store.cart);
 
+  useEffect(() => {
+    dispatch(calculateTotals());
+  }, [items]);
+
   return (
     <div className="flex flex-col mt-14 w-10/12 ml-auto mr-auto border shadow-2xl">
       <div className="flex flex-col items-center gap-3 ">
         {items.map((item) => {
+          console.log(items);
           return <CheckoutCard {...item.data} key={item.data.id} />;
         })}
       </div>

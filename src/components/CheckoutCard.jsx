@@ -4,7 +4,8 @@ import {
   ChevronRightIcon,
 } from "@heroicons/react/24/outline";
 import { useDispatch } from "react-redux";
-import { removeItem } from "../redux/cartSlice";
+import { decrease, removeItem } from "../redux/cartSlice";
+import { increase } from "../redux/cartSlice";
 const CheckoutCard = ({ id, name, price, image, amount }) => {
   const dispatch = useDispatch();
 
@@ -20,11 +21,24 @@ const CheckoutCard = ({ id, name, price, image, amount }) => {
           <h1 className="font-roboto font-extralight truncate">{name}</h1>
         </div>
         <div className="flex flex-row gap-2">
-          <button>
+          <button
+            onClick={() => {
+              if (amount === 1) {
+                dispatch(removeItem(id));
+                return;
+              }
+              dispatch(decrease({ id }));
+            }}
+          >
             <ChevronLeftIcon className="h-6 w-6" />
           </button>
           <p>{amount}</p>
-          <button>
+          <button
+            onClick={() => {
+              dispatch(increase({ id }));
+              console.log(dispatch);
+            }}
+          >
             <ChevronRightIcon className="h-6 w-6" />
           </button>
         </div>
