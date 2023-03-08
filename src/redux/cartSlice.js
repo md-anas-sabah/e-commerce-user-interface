@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   items: [],
-  amount: 4,
   total: 0,
 };
 

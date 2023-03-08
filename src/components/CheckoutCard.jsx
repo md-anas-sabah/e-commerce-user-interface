@@ -6,9 +6,9 @@ import {
 import { useDispatch } from "react-redux";
 import { decrease, removeItem } from "../redux/cartSlice";
 import { increase } from "../redux/cartSlice";
+
 const CheckoutCard = ({ id, name, price, image, amount }) => {
   const dispatch = useDispatch();
-
   const handleRemove = (id) => {
     dispatch(removeItem(id));
   };

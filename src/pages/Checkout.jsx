@@ -1,4 +1,4 @@
-import { display } from "@mui/system";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CheckoutCard from "../components/CheckoutCard";
@@ -7,14 +7,19 @@ import { closeCart } from "../redux/toggleCartSlice";
 
 const Checkout = () => {
   const dispatch = useDispatch();
+  const Navigate = useNavigate();
   useEffect(() => {
     dispatch(closeCart());
   });
-  const { items, amount, total } = useSelector((store) => store.cart);
+  const { items, total } = useSelector((store) => store.cart);
 
   useEffect(() => {
     dispatch(calculateTotals());
   }, [items]);
+
+  if (items.length < 1) {
+    Navigate("/");
+  }
 
   return (
     <div className="flex flex-col mt-14 w-10/12 ml-auto mr-auto border shadow-2xl">
