@@ -10,43 +10,46 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addItem: (state, action) => {
-      state.items.push(action.payload);
+      const newItem = action.payload;
+      const existingItem = state.items.find(item => item.data.id === newItem.data.id);
+      if (existingItem) {
+        existingItem.data.amount++;
+      } else {
+        state.items.push(newItem);
+      }
     },
     removeItem: (state, action) => {
-      // console.log(action.payload);
-      const itemID = action.payload;
-      const updatedItems = state.items.filter(
-        (item) => item.data.id !== itemID
-      );
-      console.log(updatedItems);
-      return { ...state, items: updatedItems };
+      const itemID = action.payload.data.id;
+      const updatedItems = state.items.filter(item => item.data.id !== itemID);
+      state.items = updatedItems;
     },
-    increase: (state, { payload }) => {
-      const cartItem = state.items.find((item) => item.data.id === payload.id);
-      if (cartItem.amount === undefined) {
-        cartItem.amount = 1;
-      } else {
-        cartItem.amount = cartItem.amount + 1;
+    incrementItem: (state, action) => {
+      const itemID = action.payload.data.id;
+      const selectedItem = state.items.find(item => item.data.id === itemID);
+      
+      if (selectedItem) {
+        selectedItem.data.amount++;
       }
-      console.log(cartItem.amount);
     },
-    decrease: (state, { payload }) => {
-      const cartItem = state.items.find((item) => item.data.id === payload.id);
-      cartItem.amount = cartItem.amount - 1;
+    
+    decrementItem: (state, action) => {
+      const itemID = action.payload.data.id;
+      const selectedItem = state.items.find(item => item.data.id === itemID);
+      
+      if (selectedItem) {
+        if (selectedItem.data.amount > 1) {
+          selectedItem.data.amount--;
+        } else {
+          // if the amount is already 1, remove the item from the cart
+          const updatedItems = state.items.filter(item => item.data.id !== itemID);
+          state.items = updatedItems;
+        }
+      }
     },
-    calculateTotals: (state) => {
-      let amount = 0;
-      let total = 0;
-      state.items.forEach((item) => {
-        amount += item.amount;
-        total += item.amount * item.price;
-      });
-      state.amount = amount;
-      state.total = total;
-    },
+    
   },
 });
 
-export const { addItem, removeItem, increase, decrease, calculateTotals } =
+export const { addItem, removeItem, incrementItem, decrementItem } =
   cartSlice.actions;
 export default cartSlice.reducer;

@@ -4,15 +4,14 @@ import {
   ChevronRightIcon,
 } from "@heroicons/react/24/outline";
 import { useDispatch } from "react-redux";
-import { decrease, removeItem } from "../redux/cartSlice";
-import { increase } from "../redux/cartSlice";
+import { decrementItem, incrementItem, removeItem } from "../redux/cartSlice";
 
-const CheckoutCard = ({ id, name, price, image, amount }) => {
+const CheckoutCard = ({ item }) => {
+  const {  name, price, image, amount } = item.data
   const dispatch = useDispatch();
   const handleRemove = (id) => {
     dispatch(removeItem(id));
   };
-
   return (
     <>
       <div className="flex flex-row justify-between items-center border-b-gray-600 w-3/4 ">
@@ -21,30 +20,17 @@ const CheckoutCard = ({ id, name, price, image, amount }) => {
           <h1 className="font-roboto font-extralight truncate">{name}</h1>
         </div>
         <div className="flex flex-row gap-2">
-          <button
-            onClick={() => {
-              if (amount === 1) {
-                dispatch(removeItem(id));
-                return;
-              }
-              dispatch(decrease({ id }));
-            }}
-          >
-            <ChevronLeftIcon className="h-6 w-6" />
+          <button>
+            <ChevronLeftIcon onClick={()=>dispatch(decrementItem(item))} className="h-6 w-6" />
           </button>
           <p>{amount}</p>
-          <button
-            onClick={() => {
-              dispatch(increase({ id }));
-              console.log(dispatch);
-            }}
-          >
-            <ChevronRightIcon className="h-6 w-6" />
+          <button>
+            <ChevronRightIcon onClick={()=>dispatch(incrementItem(item))} className="h-6 w-6" />
           </button>
         </div>
         <div className="font-roboto font-extralight">{`₹${price}`}</div>
         <div>
-          <button onClick={() => handleRemove(id)}>
+          <button onClick={() => handleRemove(item)}>
             <TrashIcon className="h-6 w-6" />
           </button>
         </div>
