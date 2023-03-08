@@ -38,7 +38,7 @@ const Header = () => {
     <div className="h-12 p-2 flex items-center justify-between sticky top-0 z-50 bg-[#FFFFFF] shadow ">
       <div className="ml-3">
         <Link to="/">
-          <h1 className="font-bebas tracking-widest text-4xl lg:text-sm lg:bg-black">
+          <h1 className="font-bebas tracking-widest text-4xl sm:text-sm lg:bg-black">
             Muro<span className="font-bangers">exe</span>
           </h1>
         </Link>
